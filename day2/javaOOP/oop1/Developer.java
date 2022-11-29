@@ -1,18 +1,20 @@
 import java.util.ArrayList;
 public class Developer{
     // attributes
+    public static int devCount;
     private String name;
     private boolean employed;
     private int salary;
     private double hoursOfSleep;
     private ArrayList<String> languages;
-    private ArrayList<Project> projects = new ArrayList<Project>();
+    private ArrayList<Project> projects;
 
     // constructor
     public Developer(){
         this.name = "no name yet";
         this.languages = new ArrayList<String>();
         this.projects = new ArrayList<Project>();
+        devCount++;
     }
 
     public Developer(String name, boolean employed, int salary, double hoursOfSleep){
@@ -22,6 +24,7 @@ public class Developer{
         this.hoursOfSleep = hoursOfSleep;
         this.languages = new ArrayList<String>();
         this.projects = new ArrayList<Project>();
+        devCount++;
     }
 
 

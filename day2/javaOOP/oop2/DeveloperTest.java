@@ -3,14 +3,13 @@ public class DeveloperTest {
     public static void main(String[] args){
         System.out.println("---------Developer Test---------");
 
-        Developer dev1 = new Developer();
-        dev1.name = "Radyn Greenwell";
-        dev1.salary = 100000;
-        dev1.employed = true;
-        dev1.hoursOfSleep = 5.2;
-        dev1.languages = new ArrayList<String>();
-        dev1.languages.add("Java");
-        dev1.languages.add("Python");
+        Developer dev1 = new Developer("Radyn Greenwell",true,100000,5.2);
+
+        ArrayList<String> lang = new ArrayList<String>();
+        lang.add("Java");
+        lang.add("Python");
+
+        dev1.setLanguages(lang);
 
         Project project1 = new Project();
         project1.title = "Lookify";
@@ -25,5 +24,7 @@ public class DeveloperTest {
         dev1.addProject(project2);
 
         System.out.println(dev1.displayStats());
+        System.out.println(Developer.getDevCount());
+        System.out.println(Developer.getTotalSalaries());
     }
 }
