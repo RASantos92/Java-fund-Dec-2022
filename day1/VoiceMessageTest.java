@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class VoiceMessageTest{
     public static void main(String[] args){
         VoiceMessageUtil vmUtil = new VoiceMessageUtil();
-        // vmUtil.greeting("Radyn");
+        vmUtil.greeting("name");
         // vmUtil.greeting(5);
         // vmUtil.getCurrentDate();
 
@@ -26,7 +26,7 @@ public class VoiceMessageTest{
 
         int days = 7;
         double costOfLivingForADay = 10.99;
-        double weeklyCostOfLiving = days * costOfLivingForADay;
+        double weeklyCostOfLiving = days * costOfLivingForADay; 
         System.out.println(weeklyCostOfLiving);
 
         int roundedWeeklyCostOfLiving = days * (int) costOfLivingForADay;
